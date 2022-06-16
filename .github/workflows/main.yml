@@ -14,6 +14,13 @@ jobs:
         with:
          tag_name: v${{ github.run_number }}
          release_name: Release V${{ github.run_number }}
+  changelog :
+    name: Update changelog
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@Release v4
+        with:
+          ref: master
   build-project:
     name: Build Next.js application
     runs-on: ubuntu-latest
