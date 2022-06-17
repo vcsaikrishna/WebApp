@@ -32,3 +32,5 @@ jobs:
         with:
           name: static-site
           path: out/
+          
+          
